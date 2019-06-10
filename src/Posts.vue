@@ -7,13 +7,7 @@
       <p>{{post.body}}</p>
     </li>
   </ul>
-
-  <ul v-if="errors && errors.length">
-    <li v-for="error of errors" :key="error.id">
-      {{error.message}}
-    </li>
-  </ul>   
-</div>    
+ </div>    
 </template>
 <script>
 import {RepositoryFactory} from './repository/repositoryFactory';
@@ -28,7 +22,6 @@ export default {
      data() {
     return {
       posts: [],
-      errors: [],
       isLoading: null
     }
   },
