@@ -11,7 +11,7 @@
 </template>
 <script>
 import {RepositoryFactory} from './repository/repositoryFactory';
-import Posts from './Posts';
+
 
 const PostsRepository = RepositoryFactory.get('posts');
 
